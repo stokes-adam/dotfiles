@@ -53,3 +53,9 @@ function gitcm {
 function lzg {
   lazygit
 }
+
+# Personal Alias to Update dotfiles repo
+function dotfiles {
+  cp C:\Users\mmibb\Documents\PowerShell -Recurse -Force C:\Users\mmibb\Projects\dotfiles\windows
+  cp C:\Users\mmibb\AppData\Local\oh-my-posh\custom.omp.json C:\Users\mmibb\Projects\dotfiles\windows\oh-my-posh
+}
