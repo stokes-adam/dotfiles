@@ -54,6 +54,10 @@ function lzg {
   lazygit
 }
 
+function lzd {
+  lazydocker
+}
+
 # Personal Alias to Update dotfiles repo
 function dotfiles {
   cp C:\Users\mmibb\Documents\PowerShell -Recurse -Force C:\Users\mmibb\Projects\dotfiles\windows

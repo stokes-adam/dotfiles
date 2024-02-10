@@ -23,6 +23,7 @@ All of my dotfiles and important applications
 - [Git](https://git-scm.com/)
 - [Docker](https://www.docker.com/)
 - [Lazygit](https://github.com/jesseduffield/lazygit)
+- [Lazydocker](https://github.com/jesseduffield/lazydocker)
 - [ripgrep](https://github.com/BurntSushi/ripgrep)
 - [fd](https://github.com/sharkdp/fd)
 - [fzf](https://github.com/junegunn/fzf)
