@@ -32,12 +32,20 @@ function gits {
   git status
 }
 
-function gitf {
+function gitfe {
   git fetch
 }
 
-function gitp {
+function gitfr {
+  git fetch --rebase
+}
+
+function gitps {
   git push
+}
+
+function gitpl {
+  git pull
 }
 
 function gita {
