@@ -10,7 +10,10 @@ if (Test-Path($ChocolateyProfile)) {
   Import-Module "$ChocolateyProfile"
 }
 
-# General Aliases
+# Actual Aliases
+Set-Alias -Name g -Value git
+
+# Alias Functions
 function rmrf {
   param(
     [string]$Path
@@ -27,37 +30,6 @@ function la {
     Get-ChildItem -Path $Path -Force
 }
 
-# Git Aliases
-function gits {
-  git status
-}
-
-function gitfe {
-  git fetch
-}
-
-function gitfr {
-  git fetch --rebase
-}
-
-function gitps {
-  git push
-}
-
-function gitpl {
-  git pull
-}
-
-function gita {
-  param($File)
-  git add $File
-}
-
-function gitcm {
-  param($Message)
-  git commit -m $Message
-}
-
 function lzg {
   lazygit
 }
@@ -70,4 +42,5 @@ function lzd {
 function dotfiles {
   cp C:\Users\mmibb\Documents\PowerShell -Recurse -Force C:\Users\mmibb\Projects\dotfiles\windows
   cp C:\Users\mmibb\AppData\Local\oh-my-posh\custom.omp.json C:\Users\mmibb\Projects\dotfiles\windows\oh-my-posh
+  cp C:\Users\mmibb\.gitconfig C:\Users\mmibb\Projects\dotfiles\cfg\
 }
