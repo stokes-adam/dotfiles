@@ -1,3 +1,7 @@
+if [ -z "$DISPLAY" ] && [ "XDG_VTNR" = 1 ]; then
+  exec startx
+fi
+
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
@@ -100,9 +104,9 @@ source $ZSH/oh-my-zsh.sh
 alias zshconfig="nvim ~/.zshrc"
 alias ohmyzsh="nvim ~/.oh-my-zsh"
 alias szsh="source ~/.zshrc"
-alias ls="exa --group-directories-first --icons"
-alias la="exa --all --group-directories-first --icons"
-alias tree="exa --tree --level=2 --group-directories-first --icons"
+alias ls="eza --group-directories-first --icons"
+alias la="eza --all --group-directories-first --icons"
+alias tree="eza --tree --level=2 --group-directories-first --icons"
 alias lzg="lazygit"
 alias ff="rg --hidden --files --ignore-case -g '!.git/' | fzf" # fuzzy find file and print its path
 alias cff='cd "$(dirname "$(ff)")"' # fuzzy find file and cd to it's dir
@@ -114,29 +118,15 @@ export XDG_CONFIG_HOME="$HOME/.config"
 
 # executable appimages in path
 export PATH="$PATH:$HOME/appimages"
-alias nvim="nvim.appimage"
 
 # Path management
 # Generic paths
 export PATH="$HOME/.local/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:$PATH"
 
-# Homebrew specific paths (macOS)
-# export PATH="/opt/homebrew/bin:$PATH"
-# export PATH="/opt/homebrew/sbin:$PATH"
-# export PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
-# export PATH="/usr/local/opt/findutils/libexec/gnubin:$PATH"
-# export PATH="/usr/local/opt/grep/libexec/gnubin:$PATH"
-# export PATH="/usr/local/opt/gnu-sed/libexec/gnubin:$PATH"
-# export PATH="/usr/local/opt/gnu-tar/libexec/gnubin:$PATH"
-# export PATH="/usr/local/opt/gnu-which/libexec/gnubin:$PATH"
-# export PATH="/usr/local/opt/gawk/libexec/gnubin:$PATH"
-# export PATH="/usr/local/opt/gnu-getopt/bin:$PATH"
-
 # Rust
 export PATH="$PATH:$HOME/.cargo/bin"
 
-typeset -U PATH # remove duplicates
+# Haskell
+[ -f "/home/mmibbetson/.ghcup/env" ] && . "/home/mmibbetson/.ghcup/env" # ghcup-env
 
-export NVM_DIR="$HOME/.config/nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+typeset -U PATH # remove duplicates
