@@ -126,7 +126,8 @@ export PATH="$HOME/.local/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/
 # Rust
 export PATH="$PATH:$HOME/.cargo/bin"
 
-# Haskell
-[ -f "/home/mmibbetson/.ghcup/env" ] && . "/home/mmibbetson/.ghcup/env" # ghcup-env
+# nvm
+
+#
 
 typeset -U PATH # remove duplicates

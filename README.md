@@ -1,6 +1,54 @@
 # dotfiles
 
-All of my dotfiles and important applications
+Linux & Windows Configs & Dependencies
+
+desktop environment:
+display - X
+display manager - lightdm
+window manager - i3wm
+status bar - polybar
+application runner - rofi
+
+Fonts:
+monospace -
+sans-serif -
+serif -
+
+CLI tools:
+fzf
+ripgrep
+fd-find
+lazygit
+bat
+eza
+htop
+hyperfine
+git
+docker
+
+editors:
+jetbrains rider
+vscode
+neovim
+
+code deps:
+node
+nvm
+dotnet sdk
+rust/cargo
+
+utilities:
+alacritty
+zsh
+oh my zsh
+discord
+1password
+firefox
+postman
+obsidian
+
+Theme:
+gruvbox
 
 ---
 
@@ -12,7 +60,6 @@ All of my dotfiles and important applications
 
 - [Visual Studio Code](https://code.visualstudio.com/)
 - [JetBrains Rider](https://www.jetbrains.com/rider/download/)
-- [Visual Studio](https://visualstudio.microsoft.com/downloads/)
 
 ## Theme
 
@@ -34,8 +81,6 @@ All of my dotfiles and important applications
 - [Node](https://nodejs.org/en/download/current)
 - [Dotnet](https://dotnet.microsoft.com/en-us/download)
 - [Rust](https://www.rust-lang.org/)
-  - [Bacon](https://github.com/Canop/bacon)
-- [LLVM](https://llvm.org/)
 
 ## Browsers
 
