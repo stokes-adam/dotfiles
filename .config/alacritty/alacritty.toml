@@ -5,7 +5,7 @@ program = "/bin/zsh"
 
 [window]
 padding = { x = 10, y = 10 }
-decorations = "None"
+# decorations = "None"
 opacity = 1.0
 
 [colors.primary]
@@ -31,6 +31,25 @@ blue = '#83a598'
 magenta = '#d3869b'
 cyan = '#8ec07c'
 white = '#ebdbb2'
+
+[font]
+size = 14.0
+
+[font.bold]
+family = "Fira Code Nerd Font"
+style = "Bold"
+
+[font.bold_italic]
+family = "Fira Code Nerd Font"
+style = "Bold Italic"
+
+[font.italic]
+family = "Fira Code Nerd Font"
+style = "Italic"
+
+[font.normal]
+family = "Fira Code Nerd Font"
+style = "Regular"
 
 [cursor]
 style = { shape = "Beam", blinking = "Off" }
