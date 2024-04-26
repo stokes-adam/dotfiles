@@ -18,7 +18,7 @@ Linux & Windows Configs & Dependencies
 
 ## Theme
 
-- [Gruvbox](https://github.com/morhetz/gruvbox)
+- [Catppuccin](https://catppuccin.com/)
 
 ## CLI Tools
 
