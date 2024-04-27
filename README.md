@@ -33,6 +33,7 @@ Linux & Windows Configs & Dependencies
 - [fzf](https://github.com/junegunn/fzf)
 - [bat](https://github.com/sharkdp/bat)
 - [hyperfine](https://github.com/sharkdp/hyperfine)
+- [jq](https://jqlang.github.io/jq/)
 
 ## Code
 
@@ -40,6 +41,7 @@ Linux & Windows Configs & Dependencies
 - [Bun](https://bun.sh/)
 - [.NET](https://dotnet.microsoft.com/en-us/download)
 - [Rust](https://rustup.rs)
+- [Go](https://go.dev/dl/)
 
 ## Tools
 
