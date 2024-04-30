@@ -5,7 +5,7 @@
 [init]
 	defaultBranch = main
 [alias]
-	a = add
+	ad = add
 	#############
 	br = branch
 	#############
@@ -23,5 +23,5 @@
 	#############
 	rb = rebase
 	#############
-	s = status
+	st = status
 	#############
