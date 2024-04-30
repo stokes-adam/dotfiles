@@ -4,11 +4,11 @@ Linux & Windows Configs & Dependencies
 
 ---
 
-## Font
+## Fonts
 
-- [Fira Code Nerd Font](https://www.nerdfonts.com/font-downloads)
-- [Fira Sans](https://github.com/mozilla/Fira)
-- [EB Garamond](https://fonts.google.com/specimen/EB+Garamond)
+- [CommitMono Nerd Font]()
+- [CommitMono]()
+- [Open Sans]()
 
 ## Editors
 
@@ -23,7 +23,6 @@ Linux & Windows Configs & Dependencies
 ## CLI Tools
 
 - [oh-my-zsh](https://ohmyz.sh/)
-- [htop](https://htop.dev/)
 - [Git](https://git-scm.com/)
 - [Docker](https://www.docker.com/)
 - [Lazygit](https://github.com/jesseduffield/lazygit)
@@ -41,7 +40,7 @@ Linux & Windows Configs & Dependencies
 - [Bun](https://bun.sh/)
 - [.NET](https://dotnet.microsoft.com/en-us/download)
 - [Rust](https://rustup.rs)
-- [Go](https://go.dev/dl/)
+- [Haskell]()
 
 ## Tools
 

@@ -101,6 +101,8 @@ export PATH="$PATH:$HOME/AppImages"
 # Generic paths
 export PATH="$HOME/.local/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:$PATH"
 
+# .NET
+
 # Rider
 export PATH="$HOME/Downloads/Rider/bin:$PATH"
 
@@ -112,10 +114,7 @@ export NVM_DIR="$HOME/.config/nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-typeset -U PATH # remove duplicates
-
 # Haskell
 [ -f "/home/mmibbetson/.ghcup/env" ] && . "/home/mmibbetson/.ghcup/env" # ghcup-env
 
-# opam configuration
-[[ ! -r /home/mmibbetson/.opam/opam-init/init.zsh ]] || source /home/mmibbetson/.opam/opam-init/init.zsh  > /dev/null 2> /dev/null
+typeset -U PATH # remove duplicates

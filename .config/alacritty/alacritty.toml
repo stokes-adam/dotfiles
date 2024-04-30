@@ -36,19 +36,19 @@ white = '#ebdbb2'
 size = 14.0
 
 [font.bold]
-family = "Fira Code Nerd Font"
+family = "CommitMono Nerd Font"
 style = "Bold"
 
 [font.bold_italic]
-family = "Fira Code Nerd Font"
+family = "CommitMono Nerd Font"
 style = "Bold Italic"
 
 [font.italic]
-family = "Fira Code Nerd Font"
+family = "CommitMono Nerd Font"
 style = "Italic"
 
 [font.normal]
-family = "Fira Code Nerd Font"
+family = "CommitMono Nerd Font"
 style = "Regular"
 
 [cursor]
