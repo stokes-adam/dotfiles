@@ -6,9 +6,9 @@ Linux & Windows Configs & Dependencies
 
 ## Fonts
 
-- [CommitMono Nerd Font]()
-- [CommitMono]()
-- [Open Sans]()
+- [JetBrains Mono]() 
+- [JetBrains Mono Nerd Font]()
+- [Inter]()
 
 ## Editors
 
@@ -18,7 +18,7 @@ Linux & Windows Configs & Dependencies
 
 ## Theme
 
-- [Catppuccin](https://catppuccin.com/)
+- [Gruvbox]()
 
 ## CLI Tools
 
@@ -26,7 +26,6 @@ Linux & Windows Configs & Dependencies
 - [Git](https://git-scm.com/)
 - [Docker](https://www.docker.com/)
 - [Lazygit](https://github.com/jesseduffield/lazygit)
-- [eza](https://github.com/eza-community/eza)
 - [ripgrep](https://github.com/BurntSushi/ripgrep)
 - [fd](https://github.com/sharkdp/fd)
 - [fzf](https://github.com/junegunn/fzf)
@@ -36,7 +35,7 @@ Linux & Windows Configs & Dependencies
 
 ## Code
 
-- [nvm](https://github.com/nvm-sh/nvm)
+- [nvm]()
 - [Bun](https://bun.sh/)
 - [.NET](https://dotnet.microsoft.com/en-us/download)
 - [Rust](https://rustup.rs)
@@ -50,3 +49,4 @@ Linux & Windows Configs & Dependencies
 - [Postman](https://www.postman.com/downloads/)
 - [Obsidian](https://obsidian.md/)
 - [Discord](https://discord.com/)
+

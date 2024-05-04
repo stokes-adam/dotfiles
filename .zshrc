@@ -1,6 +1,3 @@
-# If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
-
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
@@ -17,7 +14,7 @@ HYPHEN_INSENSITIVE="false"
 # Uncomment one of the following lines to change the auto-update behavior
 # zstyle ':omz:update' mode disabled  # disable automatic updates
 # zstyle ':omz:update' mode auto      # update automatically without asking
-# zstyle ':omz:update' mode reminder  # just remind me to update when it's time
+zstyle ':omz:update' mode reminder  # just remind me to update when it's time
 
 # Uncomment the following line to change how often to auto-update (in days).
 # zstyle ':omz:update' frequency 13
@@ -52,8 +49,6 @@ HYPHEN_INSENSITIVE="false"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
-
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
@@ -70,9 +65,6 @@ else
   export EDITOR='nvim'
 fi
 
-# Compilation flags
-# export ARCHFLAGS="-arch x86_64"
-
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
@@ -82,12 +74,12 @@ fi
 alias zshconfig="nvim ~/.zshrc"
 alias ohmyzsh="nvim ~/.oh-my-zsh"
 alias szsh="source ~/.zshrc"
-alias ls="eza --group-directories-first --icons"
-alias la="eza --all --group-directories-first --icons"
-alias tree="eza --tree --level=2 --group-directories-first --icons"
+alias ls="ls --group-directories-first --color=auto"
+alias la="ls --all --group-directories-first --color=auto"
 alias lzg="lazygit"
-alias ff="rg --hidden --files --ignore-case -g '!.git/' | fzf" # fuzzy find file and print its path
-alias cff='cd "$(dirname "$(ff)")"' # fuzzy find file and cd to it's dir
+alias grep="grep --color=auto"
+alias egrep='egrep --color=auto'
+alias fgrep='fgrep --color=auto'
 
 # gruvbox for fzf
 export FZF_DEFAULT_OPTS="--color fg:#ebdbb2,bg:#282828,hl:#fabd2f,fg+:#ebdbb2,bg+:#3c3836,hl+:#fabd2f
@@ -104,11 +96,11 @@ export PATH="$PATH:$HOME/AppImages"
 # Generic paths
 export PATH="$HOME/.local/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:$PATH"
 
+# Haskell
+[ -f "/home/mmibbetson/.ghcup/env" ] && . "/home/mmibbetson/.ghcup/env"
+
 # Rust
 export PATH="$PATH:$HOME/.cargo/bin"
-
-# Go
-export PATH="$PATH:/usr/local/go/bin"
 
 # nvm
 export NVM_DIR="$HOME/.config/nvm"
@@ -123,3 +115,4 @@ export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 
 typeset -U PATH # remove duplicates
+
