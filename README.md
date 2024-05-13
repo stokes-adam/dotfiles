@@ -6,9 +6,9 @@ Linux & Windows Configs & Dependencies
 
 ## Fonts
 
-- [JetBrains Mono]() 
-- [JetBrains Mono Nerd Font]()
-- [Inter]()
+- [CommitMono](https://commitmono.com/) 
+- [CommitMono Nerd Font](https://www.nerdfonts.com/font-downloads)
+- [Inter](https://rsms.me/inter/)
 
 ## Editors
 
@@ -21,7 +21,6 @@ Linux & Windows Configs & Dependencies
 - [Gruvbox]()
 
 ## CLI Tools
-
 - [oh-my-zsh](https://ohmyz.sh/)
 - [Git](https://git-scm.com/)
 - [Docker](https://www.docker.com/)
@@ -39,6 +38,9 @@ Linux & Windows Configs & Dependencies
 - [Bun](https://bun.sh/)
 - [.NET](https://dotnet.microsoft.com/en-us/download)
 - [Rust](https://rustup.rs)
+- [Go](https://go.dev/)
+  - [Delve](https://github.com/go-delve/delve)
+  - [staticcheck](https://staticcheck.dev/)
 - [Haskell]()
 
 ## Tools
