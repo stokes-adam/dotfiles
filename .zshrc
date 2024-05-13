@@ -99,6 +99,10 @@ export PATH="$HOME/.local/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/
 # Haskell
 [ -f "/home/mmibbetson/.ghcup/env" ] && . "/home/mmibbetson/.ghcup/env"
 
+# Go
+export PATH=$PATH:/usr/local/go/bin # GOROOT
+export PATH=$PATH:$HOME/go/bin # GOPATH
+
 # Rust
 export PATH="$PATH:$HOME/.cargo/bin"
 
