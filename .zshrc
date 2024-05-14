@@ -16,14 +16,8 @@ HYPHEN_INSENSITIVE="false"
 # zstyle ':omz:update' mode auto      # update automatically without asking
 zstyle ':omz:update' mode reminder  # just remind me to update when it's time
 
-# Uncomment the following line to change how often to auto-update (in days).
-# zstyle ':omz:update' frequency 13
-
 # Uncomment the following line if pasting URLs and other text is messed up.
 # DISABLE_MAGIC_FUNCTIONS="true"
-
-# Uncomment the following line to disable colors in ls.
-# DISABLE_LS_COLORS="true"
 
 # Uncomment the following line to disable auto-setting terminal title.
 # DISABLE_AUTO_TITLE="true"
@@ -36,14 +30,6 @@ zstyle ':omz:update' mode reminder  # just remind me to update when it's time
 # much, much faster.
 # DISABLE_UNTRACKED_FILES_DIRTY="true"
 
-# Uncomment the following line if you want to change the command execution time
-# stamp shown in the history command output.
-# You can set one of the optional three formats:
-# "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
-# or set a custom format using the strftime function format specifications,
-# see 'man strftime' for details.
-# HIST_STAMPS="mm/dd/yyyy"
-
 # Which plugins would you like to load?
 # Standard plugins can be found in $ZSH/plugins/
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
@@ -52,11 +38,6 @@ zstyle ':omz:update' mode reminder  # just remind me to update when it's time
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
-
-# export MANPATH="/usr/local/man:$MANPATH"
-
-# You may need to manually set your language environment
-# export LANG=en_US.UTF-8
 
 # Preferred editor for local and remote sessions
 if [[ -n $SSH_CONNECTION ]]; then
@@ -96,12 +77,12 @@ export PATH="$PATH:$HOME/AppImages"
 # Generic paths
 export PATH="$HOME/.local/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:$PATH"
 
-# Haskell
-[ -f "/home/mmibbetson/.ghcup/env" ] && . "/home/mmibbetson/.ghcup/env"
+# OCaml
+# Unnecessary if installed via package manager
+[[ ! -r /home/mmibbetson/.opam/opam-init/init.zsh ]] || source /home/mmibbetson/.opam/opam-init/init.zsh  > /dev/null 2> /dev/null
 
-# Go
-export PATH=$PATH:/usr/local/go/bin # GOROOT
-export PATH=$PATH:$HOME/go/bin # GOPATH
+# Dotnet
+# Unnecessary if installed via package manager
 
 # Rust
 export PATH="$PATH:$HOME/.cargo/bin"
@@ -110,13 +91,6 @@ export PATH="$PATH:$HOME/.cargo/bin"
 export NVM_DIR="$HOME/.config/nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
-# bun completions
-[ -s "/home/mmibbetson/.bun/_bun" ] && source "/home/mmibbetson/.bun/_bun"
-
-# bun
-export BUN_INSTALL="$HOME/.bun"
-export PATH="$BUN_INSTALL/bin:$PATH"
 
 typeset -U PATH # remove duplicates
 
