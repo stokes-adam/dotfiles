@@ -6,8 +6,8 @@ Linux & Windows Configs & Dependencies
 
 ## Fonts
 
-- [CommitMono](https://commitmono.com/) 
-- [CommitMono Nerd Font](https://www.nerdfonts.com/font-downloads)
+- [JetBrainsMono]() 
+- [JetBrainsMono Nerd Font]()
 - [Inter](https://rsms.me/inter/)
 
 ## Editors
@@ -25,6 +25,7 @@ Linux & Windows Configs & Dependencies
 - [Git](https://git-scm.com/)
 - [Docker](https://www.docker.com/)
 - [Lazygit](https://github.com/jesseduffield/lazygit)
+- [Lazydocker]()
 - [ripgrep](https://github.com/BurntSushi/ripgrep)
 - [fd](https://github.com/sharkdp/fd)
 - [fzf](https://github.com/junegunn/fzf)
@@ -35,13 +36,9 @@ Linux & Windows Configs & Dependencies
 ## Code
 
 - [nvm]()
-- [Bun](https://bun.sh/)
 - [.NET](https://dotnet.microsoft.com/en-us/download)
 - [Rust](https://rustup.rs)
-- [Go](https://go.dev/)
-  - [Delve](https://github.com/go-delve/delve)
-  - [staticcheck](https://staticcheck.dev/)
-- [Haskell]()
+- [OCaml]()
 
 ## Tools
 
