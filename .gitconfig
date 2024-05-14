@@ -21,6 +21,8 @@
 	#############
 	pl = pull
 	#############
+	pr = pull --rebase
+	#############
 	rb = rebase
 	#############
 	st = status
