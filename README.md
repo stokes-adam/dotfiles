@@ -1,27 +1,28 @@
 # dotfiles
 
-Linux & Windows Configs & Dependencies
+Linux Configs & Dependencies
 
 ---
 
 ## Fonts
 
-- [JetBrainsMono]() 
-- [JetBrainsMono Nerd Font]()
+- [JetBrainsMono](https://www.jetbrains.com/lp/mono/) 
+- [JetBrainsMono Nerd Font](https://www.nerdfonts.com/font-downloads)
 - [Inter](https://rsms.me/inter/)
 
 ## Editors
 
 - [Visual Studio Code](https://code.visualstudio.com/)
 - [JetBrains Rider](https://www.jetbrains.com/rider/)
-- [Neovim](https://neovim.io/)
 
 ## Theme
 
-- [Gruvbox]()
+- [Gruvbox](https://github.com/morhetz/gruvbox)
 
 ## CLI Tools
 - [oh-my-zsh](https://ohmyz.sh/)
+- [tmux](https://github.com/tmux/tmux/wiki)
+- [Neovim](https://neovim.io/)
 - [Git](https://git-scm.com/)
 - [Docker](https://www.docker.com/)
 - [Lazygit](https://github.com/jesseduffield/lazygit)
@@ -41,7 +42,7 @@ Linux & Windows Configs & Dependencies
   - [ESLint]()
 - [.NET](https://dotnet.microsoft.com/en-us/download)
 - [Rust](https://rustup.rs)
-- [OCaml]()
+- [OCaml](https://ocaml.org/docs/installing-ocaml)
   - [UTop]()
   - [Dune]()
   - [ocaml-lsp-server]()

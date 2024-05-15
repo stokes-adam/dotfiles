@@ -7,7 +7,7 @@ import = [
 ]
 
 [shell]
-program = "/bin/zsh"
+program = "tmux"
 
 [window]
 padding = { x = 10, y = 10 }
