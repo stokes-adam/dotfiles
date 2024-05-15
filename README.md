@@ -35,10 +35,18 @@ Linux & Windows Configs & Dependencies
 
 ## Code
 
-- [nvm]()
+- [Node]()
+  - [TypeScript]()
+  - [Prettier]()
+  - [ESLint]()
 - [.NET](https://dotnet.microsoft.com/en-us/download)
 - [Rust](https://rustup.rs)
 - [OCaml]()
+  - [UTop]()
+  - [Dune]()
+  - [ocaml-lsp-server]()
+  - [odoc]()
+  - [OCamlFormat]()
 
 ## Tools
 
