@@ -8,7 +8,7 @@ import = [
 
 [shell]
 program = "/bin/zsh"
-args = ["-c", "tmux a"]
+args = ["-c", "tmux attach || tmux new-session"]
 
 [window]
 padding = { x = 10, y = 10 }
