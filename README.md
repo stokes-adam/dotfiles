@@ -8,28 +8,31 @@ Linux Configs & Dependencies
 
 This configuration is for Xorg and does not accommodate for Wayland.
 
+Note that I choose not to specify any window manager like lightdm or gdm. I instead have `startx` execute when sourcing `.zshrc` and just log in from the shell directly.
+
 ### Required
 
 1. git
 2. stow
 3. alacritty
-4. dunst (NEEDS MORE CONFIG)
+4. dunst
 5. feh
 6. rofi
 7. polybar
 8. nm-applet
 9. xsslock
-10. i3lock (TO BE CONFIGURED)
+10. i3lock
 11. picom
 12. pavucontrol
 
 ### Recommended
 
 1. brightnessctl
-2. clipit (TO BE CONFIGURED)
+2. clipit
 3. flameshot
 4. blueman
 5. redshift
+6. zathura (and any needed plugins e.g. mupdf)
 
 ## Installation
 
