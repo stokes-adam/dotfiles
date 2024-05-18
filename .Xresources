@@ -1,5 +1,5 @@
-*background_alpha: #282828e6
-*foreground_alpha: #ebdbb2e6
+*background_alpha: #e6282828
+*foreground_alpha: #e6ebdbb2
 
 *.background: #282828
 *.foreground: #ebdbb2

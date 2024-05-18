@@ -22,6 +22,7 @@ This configuration is for Xorg and does not accommodate for Wayland.
 10. i3lock (TO BE CONFIGURED)
 11. picom
 12. pavucontrol
+13. lightdm
 
 ### Recommended
 
