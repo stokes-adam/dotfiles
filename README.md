@@ -33,6 +33,7 @@ Note that I choose not to specify any window manager like lightdm or gdm. I inst
 4. blueman
 5. redshift
 6. zathura (and any needed plugins e.g. mupdf)
+7. ranger
 
 ## Installation
 
