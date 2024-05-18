@@ -109,5 +109,8 @@ export NVM_DIR="$HOME/.config/nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion" # This loads nvm bash_completion
 
+# Dark theme for GTK apps
+export GTK_THEME=Adwaita-dark
+
 typeset -U PATH # remove duplicates
 

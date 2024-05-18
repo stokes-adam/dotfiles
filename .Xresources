@@ -1,36 +1,36 @@
-*background_alpha: #80303446
-*foreground_alpha: #80C6D0F5
+*background_alpha: #282828e6
+*foreground_alpha: #ebdbb2e6
 
-*.background: #303446
-*.foreground: #C6D0F5
+*.background: #282828
+*.foreground: #ebdbb2
 ! black
-*color0: #51576D
-*color8: #626880
+*color0: #282828
+*color8: #928374
 
 ! red
-*color1: #E78284
-*color9: #E78284
+*color1: #cc241d
+*color9: #fb4934
 
 ! green
-*color2: #A6D189
-*color10: #A6D189
+*color2: #98971a
+*color10: #b8bb26
 
 ! yellow
-*color3: #E5C890
-*color11: #E5C890
+*color3: #d79921
+*color11: #fabd2f
 
 ! blue
-*color4: #8CAAEE
-*color12: #8CAAEE
+*color4: #458588
+*color12: #83a598
 
 ! magenta
-*color5: #F4B8E4
-*color13: #F4B8E4
+*color5: #b16286
+*color13: #d3869b
 
 ! cyan
-*color6: #81C8BE
-*color14: #81C8BE
+*color6: #689d6a
+*color14: #8ec07c
 
 ! white
-*color7: #B5BFE2
-*color15: #A5ADCE
+*color7: #a89984
+*color15: #ebdbb2

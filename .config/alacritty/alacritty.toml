@@ -2,13 +2,13 @@ live_config_reload = true
 
 import = [
   # uncomment the flavour you want below:
-  "~/.config/alacritty/gruvbox-dark.toml"
+  "~/.config/alacritty/gruvbox-dark.toml",
   # "~/.config/alacritty/gruvbox-light.toml"
 ]
 
 [shell]
 program = "/bin/zsh"
-args = ["-c", "tmux attach || tmux new-session"]
+# args = ["-c", "tmux attach || tmux new-session"]
 
 [window]
 padding = { x = 10, y = 10 }

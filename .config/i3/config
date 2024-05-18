@@ -21,6 +21,11 @@ set $down j
 set $up k
 set $right l
 
+set $resize_left u
+set $resize_down i
+set $resize_up o
+set $resize_right p
+
 # Your preferred terminal emulator
 set $term alacritty
 
@@ -36,12 +41,15 @@ font pango:Inter 10
 # https://wiki.archlinux.org/index.php/XDG_Autostart
 exec --no-startup-id dex-autostart --autostart --environment i3
 
+# Merge .Xresources
+exec --no-startup-id xrdb -merge ~/.Xresources
+
 # The combination of xss-lock, nm-applet and pactl is a popular choice, so
 # they are included here as an example. Modify as you see fit.
 
 # xss-lock grabs a logind suspend inhibit lock and will use i3lock to lock the
 # screen before suspend. Use loginctl lock-session to lock your screen.
-exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
+exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork --show-failed-attempts --ignore-empty-password --tiling --image='~/dotfiles/lockscreen.png'
 
 # NetworkManager is the most popular way to manage wireless networks on Linux,
 # and nm-applet is a desktop environment-independent system tray GUI for it.
@@ -51,7 +59,7 @@ exec --no-startup-id nm-applet
 exec --no-startup-id picom --config ~/.config/picom/picom.conf
 
 # Feh for background image
-exec --no-startup-id feh --bg-fill ~/Downloads/wallpaper.jpg
+exec --no-startup-id feh --bg-fill ~/dotfiles/wallpaper.png
 
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
@@ -90,29 +98,25 @@ bindsym $mod+$down focus down
 bindsym $mod+$up focus up
 bindsym $mod+$right focus right
 
-# alternatively, you can use the cursor keys:
-bindsym $mod+Left focus left
-bindsym $mod+Down focus down
-bindsym $mod+Up focus up
-bindsym $mod+Right focus right
-
 # move focused window
 bindsym $mod+Shift+$left move left
 bindsym $mod+Shift+$down move down
 bindsym $mod+Shift+$up move up
 bindsym $mod+Shift+$right move right
 
-# alternatively, you can use the cursor keys:
-bindsym $mod+Shift+Left move left
-bindsym $mod+Shift+Down move down
-bindsym $mod+Shift+Up move up
-bindsym $mod+Shift+Right move right
+# resize window (you can also use the mouse for that)
+# Pressing left will shrink the window’s width.
+# Pressing right will grow the window’s width.
+# Pressing up will shrink the window’s height.
+# Pressing down will grow the window’s height.
+bindsym $mod+$resize_left resize shrink width 10 px or 10 ppt
+bindsym $mod+$resize_down resize grow height 10 px or 10 ppt
+bindsym $mod+$resize_up resize shrink height 10 px or 10 ppt
+bindsym $mod+$resize_right resize grow width 10 px or 10 ppt
 
-# split in horizontal orientation
-bindsym $mod+b split h
-
-# split in vertical orientation
-bindsym $mod+v split v
+# Change direction of panel split using | for horizontal and \ for vertical
+bindsym $mod+Shift+backslash split h
+bindsym $mod+backslash split v
 
 # enter fullscreen mode for the focused container
 bindsym $mod+f fullscreen toggle
@@ -137,15 +141,15 @@ bindsym $mod+a focus parent
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
 set $ws1 "1 | System"
-set $ws2 "2 | Browser"
-set $ws3 "3 | Code"
-set $ws4 "4 | Workspace"
-set $ws5 "5 | Comms"
-set $ws6 "6 |"
-set $ws7 "7 |"
-set $ws8 "8 |"
+set $ws2 "2 | Comms"
+set $ws3 "3 | Browser"
+set $ws4 "4 | Code"
+set $ws5 "5 | Reading"
+set $ws6 "6 | Music"
+set $ws7 "7 | Video"
+set $ws8 "8 | Files"
 set $ws9 "9 |"
-set $ws10 "10 | Music"
+set $ws10 "10 |"
 
 # switch to workspace
 bindsym $mod+1 workspace number $ws1
@@ -171,39 +175,22 @@ bindsym $mod+Shift+8 move container to workspace number $ws8
 bindsym $mod+Shift+9 move container to workspace number $ws9
 bindsym $mod+Shift+0 move container to workspace number $ws10
 
+# move to workspace 1 (secondary binding for convenience)
+bindsym $mod+Home workspace $ws1
+
+# move to next or prev workspace
+bindsym $mod+comma workspace prev
+bindsym $mod+period workspace next
+
+# Lock screen
+bindsym $mod+Control+l exec loginctl lock-session
+
 # reload the configuration file
 bindsym $mod+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
-
-# resize window (you can also use the mouse for that)
-mode "resize" {
-        # These bindings trigger as soon as you enter the resize mode
-
-        # Pressing left will shrink the window’s width.
-        # Pressing right will grow the window’s width.
-        # Pressing up will shrink the window’s height.
-        # Pressing down will grow the window’s height.
-        bindsym $left resize shrink width 10 px or 10 ppt
-        bindsym $down resize grow height 10 px or 10 ppt
-        bindsym $up resize shrink height 10 px or 10 ppt
-        bindsym $right resize grow width 10 px or 10 ppt
-
-        # same bindings, but for the arrow keys
-        bindsym Left resize shrink width 10 px or 10 ppt
-        bindsym Down resize grow height 10 px or 10 ppt
-        bindsym Up resize shrink height 10 px or 10 ppt
-        bindsym Right resize grow width 10 px or 10 ppt
-
-        # back to normal: Enter or Escape or $mod+r
-        bindsym Return mode "default"
-        bindsym Escape mode "default"
-        bindsym $mod+r mode "default"
-}
-
-bindsym $mod+r mode "resize"
 
 # Border
 default_border none
