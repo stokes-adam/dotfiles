@@ -6,24 +6,23 @@ Linux Configs & Dependencies
 
 ## Dependencies
 
-This configuration is for Xorg and does not accommodate for Wayland.
-
-Note that I choose not to specify any window manager like lightdm or gdm. I instead have `startx` execute when sourcing `.zshrc` and just log in from the shell directly.
+This configuration is designed for the Xorg display server, and is display manager agnostic. Assuming you have no display manager, the initial load of the .zshrc will execute startx and begin the i3 session. Otherwise, you can select i3 from your display manager of choice.
 
 ### Required
 
-1. git
-2. stow
-3. alacritty
-4. dunst
-5. feh
-6. rofi
-7. polybar
-8. nm-applet
-9. xsslock
-10. i3lock
-11. picom
-12. pavucontrol
+1. zsh
+2. git
+3. stow
+4. alacritty
+5. dunst
+6. feh
+7. rofi
+8. polybar
+9. nm-applet
+10. xss-lock
+11. i3lock
+12. picom
+13. pavucontrol
 
 ### Recommended
 
@@ -37,23 +36,7 @@ Note that I choose not to specify any window manager like lightdm or gdm. I inst
 
 ## Installation
 
-Clone this repository into your $HOME directory:
-
-### SSH
-
-```sh
-git clone https://github.com/mmibbetson/dotfiles
-cd dotfiles/
-stow .
-```
-
-### HTTPS
-
-```sh
-git clone git@github.com:mmibbetson/dotfiles.git
-cd dotfiles/
-stow .
-```
+After making sure you have the required dependencies installed, fork this repository and clone it into your $HOME directory, then navigate into it and run `stow .` to create the symlinks.
 
 ## Fonts
 
