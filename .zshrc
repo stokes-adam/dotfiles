@@ -60,9 +60,6 @@ setopt hist_find_no_dups
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
 zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
 
-# Enable shift-tab for reverse jump through suggestions
-bindkey '^[[Z' reverse-menu-complete
-
 # Aliases
 alias zshconfig="nvim ~/.zshrc"
 alias szsh="source ~/.zshrc"
@@ -73,7 +70,7 @@ alias lzd='lazydocker'
 
 # Preferred editor for local and remote sessions
 if [[ -n $SSH_CONNECTION ]]; then
-  export EDITOR='vim'
+  export EDITOR='vi'
 else
   export EDITOR='nvim'
 fi
@@ -114,9 +111,6 @@ export PATH="$HOME/.cargo/bin:$PATH"
 export NVM_DIR="$HOME/.config/nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion" # This loads nvm bash_completion
-
-# Dark theme for GTK apps
-export GTK_THEME=Adwaita-dark
 
 typeset -U PATH # remove duplicates
 

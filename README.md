@@ -23,6 +23,8 @@ This configuration is designed for the Xorg display server, and is display manag
 11. i3lock
 12. picom
 13. pavucontrol
+14. fd
+15. fzf
 
 ### Recommended
 
@@ -88,7 +90,6 @@ After making sure you have the required dependencies installed, fork this reposi
 
 ### Tools
 
-- [Thunar]()
 - [Firefox](https://www.mozilla.org/en-US/firefox/new/)
 - [1Password](https://1password.com/)
 - [Postman](https://www.postman.com/downloads/)
