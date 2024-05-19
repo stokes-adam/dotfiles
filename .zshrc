@@ -89,16 +89,15 @@ export BAT_THEME="gruvbox-dark"
 # executable appimages in path
 export PATH="$HOME/AppImages:$PATH"
 
+# executable scripts in path
+export PATH="$HOME/scripts:$PATH"
+
 # Path management
 
 # macOS
 if [[ -f "/opt/homebrew/bin/brew" ]] then
   eval "$(/opt/homebrew/bin/brew shellenv)"
 fi
-
-# OCaml
-# Assuming installed binary, not package manager
-[[ ! -r /home/mmibbetson/.opam/opam-init/init.zsh ]] || source /home/mmibbetson/.opam/opam-init/init.zsh  > /dev/null 2> /dev/null
 
 # Dotnet
 export PATH="/usr/share/dotnet:$PATH"
@@ -111,6 +110,13 @@ export PATH="$HOME/.cargo/bin:$PATH"
 export NVM_DIR="$HOME/.config/nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion" # This loads nvm bash_completion
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+
+# bun completions
+[ -s "/home/mmibbetson/.bun/_bun" ] && source "/home/mmibbetson/.bun/_bun"
 
 typeset -U PATH # remove duplicates
 
