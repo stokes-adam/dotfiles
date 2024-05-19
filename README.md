@@ -74,19 +74,20 @@ After making sure you have the required dependencies installed, fork this reposi
 ### Code
 
 - [Node](https://nodejs.org/en/download)
+  - [Bun]()
   - [TypeScript](https://www.typescriptlang.org/download/)
   - [Prettier](https://prettier.io/docs/en/install)
   - [ESLint](https://eslint.org/)
 - [.NET](https://dotnet.microsoft.com/en-us/download)
   - [FAKE]()
   - [Fantomas]()
+- [LLVM]()
+  - [LLDB]()
+- [clang]()
+- [Lua]()
+  - [LuaJit]()
+  - [LuaRocks]()
 - [Rust](https://rustup.rs)
-- [OCaml](https://ocaml.org/docs/installing-ocaml)
-  - [UTop](https://github.com/ocaml-community/utop)
-  - [Dune](https://dune.build/)
-  - [ocaml-lsp-server](https://github.com/ocaml/ocaml-lsp)
-  - [odoc](https://github.com/ocaml/odoc)
-  - [OCamlFormat](https://opam.ocaml.org/packages/ocamlformat/)
 
 ### Tools
 
