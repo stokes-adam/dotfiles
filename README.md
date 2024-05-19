@@ -42,8 +42,8 @@ After making sure you have the required dependencies installed, fork this reposi
 
 ## Fonts
 
-- [JetBrainsMono](https://www.jetbrains.com/lp/mono/) 
-- [JetBrainsMono Nerd Font](https://www.nerdfonts.com/font-downloads)
+- [CommitMono](https://www.jetbrains.com/lp/mono/) 
+- [CommitMono Nerd Font](https://www.nerdfonts.com/font-downloads)
 - [Inter](https://rsms.me/inter/)
 
 ## Theme
