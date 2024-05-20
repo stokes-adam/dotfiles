@@ -74,19 +74,20 @@ After making sure you have the required dependencies installed, fork this reposi
 ### Code
 
 - [Node](https://nodejs.org/en/download)
-  - [Bun]()
+- [Bun]()
   - [TypeScript](https://www.typescriptlang.org/download/)
   - [Prettier](https://prettier.io/docs/en/install)
   - [ESLint](https://eslint.org/)
 - [.NET](https://dotnet.microsoft.com/en-us/download)
   - [FAKE]()
   - [Fantomas]()
+- [Go]()
+  - [delve]()
+  - [staticcheck]()
 - [LLVM]()
   - [LLDB]()
-- [clang]()
-- [Lua]()
-  - [LuaJit]()
-  - [LuaRocks]()
+- [Clang]()
+- [Zig]()
 - [Rust](https://rustup.rs)
 
 ### Tools

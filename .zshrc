@@ -39,6 +39,9 @@ zinit cdreplay -q
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
+# Set tabsize to 4
+tabs -4
+
 # Vim keybindings
 bindkey '^p' history-search-backward
 bindkey '^n' history-search-forward
@@ -94,6 +97,9 @@ export PATH="$HOME/scripts:$PATH"
 
 # Path management
 
+# Linux
+export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+
 # macOS
 if [[ -f "/opt/homebrew/bin/brew" ]] then
   eval "$(/opt/homebrew/bin/brew shellenv)"
@@ -102,6 +108,12 @@ fi
 # Dotnet
 export PATH="/usr/share/dotnet:$PATH"
 export PATH="$HOME/.dotnet/tools:$PATH"
+
+# Go
+export GOROOT="/usr/local/go"
+export GOPATH="$HOME/go"
+export PATH="$GOROOT/bin:$PATH"
+export PATH="$GOPATH/bin:$PATH"
 
 # Rust
 export PATH="$HOME/.cargo/bin:$PATH"
