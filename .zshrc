@@ -1,14 +1,14 @@
-# Start X11 and i3 on login. Behaves strangely after exiting an existing session
-# So if you want to log out prefer to just reboot the system
-if [ -z "$DISPLAY" ] && [ "$(tty)" = "/dev/tty1" ]; then
- startx
-fi
-
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
 if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
+
+# Start X11 and i3 on login. Behaves strangely after exiting an existing session
+# So if you want to log out prefer to just reboot the system
+if [ -z "$DISPLAY" ] && [ "$(tty)" = "/dev/tty1" ]; then
+ startx
 fi
 
 # Set the directory we want to store zinit and plugins
@@ -38,9 +38,6 @@ zinit cdreplay -q
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-
-# Set tabsize to 4
-tabs -4
 
 # Vim keybindings
 bindkey '^p' history-search-backward
@@ -94,29 +91,23 @@ export BAT_THEME="gruvbox-dark"
 # Linux
 export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 
-# Snaps (ubuntu moment)
-export PATH="/snap/bin/:$PATH"
-
-# executable appimages in path
-export PATH="$HOME/AppImages:$PATH"
-
-# executable scripts in path
-export PATH="$HOME/scripts:$PATH"
-
 # macOS
 if [[ -f "/opt/homebrew/bin/brew" ]] then
   eval "$(/opt/homebrew/bin/brew shellenv)"
 fi
 
+# Snaps (ubuntu moment)
+export PATH="/snap/bin/:$PATH"
+
+# AppImages
+export PATH="$HOME/AppImages:$PATH"
+
+# Scripts
+export PATH="$HOME/scripts:$PATH"
+
 # Dotnet
 export PATH="/usr/share/dotnet:$PATH"
 export PATH="$HOME/.dotnet/tools:$PATH"
-
-# Go
-export GOROOT="/usr/local/go"
-export GOPATH="$HOME/go"
-export PATH="$GOROOT/bin:$PATH"
-export PATH="$GOPATH/bin:$PATH"
 
 # Rust
 export PATH="$HOME/.cargo/bin:$PATH"

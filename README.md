@@ -42,9 +42,11 @@ After making sure you have the required dependencies installed, fork this reposi
 
 ## Fonts
 
-- [CommitMono](https://www.jetbrains.com/lp/mono/) 
-- [CommitMono Nerd Font](https://www.nerdfonts.com/font-downloads)
-- [Inter](https://rsms.me/inter/)
+- [Iosevka]() 
+- [Iosevka Term Nerd Font]()
+- [Iosevka Aile]()
+- [Iosevka Etoile]()
+
 
 ## Theme
 
@@ -74,20 +76,13 @@ After making sure you have the required dependencies installed, fork this reposi
 ### Code
 
 - [Node](https://nodejs.org/en/download)
-- [Bun]()
+- [Bun](https://bun.sh/)
   - [TypeScript](https://www.typescriptlang.org/download/)
   - [Prettier](https://prettier.io/docs/en/install)
   - [ESLint](https://eslint.org/)
 - [.NET](https://dotnet.microsoft.com/en-us/download)
-  - [FAKE]()
-  - [Fantomas]()
-- [Go]()
-  - [delve]()
-  - [staticcheck]()
-- [LLVM]()
-  - [LLDB]()
-- [Clang]()
-- [Zig]()
+  - [FAKE](https://fake.build/)
+  - [Fantomas](https://fsprojects.github.io/fantomas/)
 - [Rust](https://rustup.rs)
 
 ### Tools
