@@ -94,6 +94,9 @@ export BAT_THEME="gruvbox-dark"
 # Linux
 export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 
+# Snaps (ubuntu moment)
+export PATH="/snap/bin/:$PATH"
+
 # executable appimages in path
 export PATH="$HOME/AppImages:$PATH"
 
