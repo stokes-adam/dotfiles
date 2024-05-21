@@ -89,16 +89,16 @@ export FZF_DEFAULT_COMMAND='fd --type f'
 # gruvbox for bat
 export BAT_THEME="gruvbox-dark"
 
+# Path management
+
+# Linux
+export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+
 # executable appimages in path
 export PATH="$HOME/AppImages:$PATH"
 
 # executable scripts in path
 export PATH="$HOME/scripts:$PATH"
-
-# Path management
-
-# Linux
-export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 
 # macOS
 if [[ -f "/opt/homebrew/bin/brew" ]] then
