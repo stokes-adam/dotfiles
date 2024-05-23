@@ -11,6 +11,8 @@
 	#############
 	co = commit
 	#############
+	com = commit --message
+	#############
 	di = diff
 	#############
 	fe = fetch
@@ -21,9 +23,13 @@
 	#############
 	pl = pull
 	#############
-	pr = pull --rebase
+	plr = pull --rebase
 	#############
-	rb = rebase
+	me = merge
+	#############
+	re = rebase
 	#############
 	st = status
+	#############
+	cfg = config
 	#############
