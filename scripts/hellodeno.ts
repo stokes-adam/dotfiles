@@ -5,5 +5,11 @@
  * particular script without the file extension, but this will ruin syntax
  * highlighting when editing it. Best for very stable scripts.
  */
+import * as flags from "jsr:@std/flags";
 
-console.log("Hello from Deno!");
+const args = Deno.args.at(0);
+const num = flags.parse(args);
+
+const doMath = (num: number): number => num * num;
+
+console.log(doMath(num));
