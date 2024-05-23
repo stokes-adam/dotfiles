@@ -105,6 +105,9 @@ export PATH="$HOME/AppImages:$PATH"
 # Scripts
 export PATH="$HOME/scripts:$PATH"
 
+# Neovim (when built from source)
+export PATH="$PATH:/opt/nvim-linux64/bin"
+
 # Dotnet
 export PATH="/usr/share/dotnet:$PATH"
 export PATH="$HOME/.dotnet/tools:$PATH"
@@ -112,10 +115,14 @@ export PATH="$HOME/.dotnet/tools:$PATH"
 # Rust
 export PATH="$HOME/.cargo/bin:$PATH"
 
-# nvm
+# Node (nvm)
 export NVM_DIR="$HOME/.config/nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion" # This loads nvm bash_completion
+
+# Deno
+export DENO_INSTALL="$HOME/.deno"
+export PATH="$DENO_INSTALL/bin:$PATH"
 
 # bun
 export BUN_INSTALL="$HOME/.bun"
@@ -125,4 +132,3 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 [ -s "/home/mmibbetson/.bun/_bun" ] && source "/home/mmibbetson/.bun/_bun"
 
 typeset -U PATH # remove duplicates
-
